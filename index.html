@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+        <div id="titleDiv">Tic Tac Toe</div>
+
+        <div class="optionsDivClass" id="optionsDiv">
+            <form id="optionsForm">
+                <div class="optionsFormSectionTitle">Player 1</div><br>
+                <label for="player1Name">Name:</label>
+                <input type="text" id="player1Name" name="player1Name" value="Player 1" maxlength="100"><br><br>
+                
+                <input type="radio" id="player1Human" name="player1Type" value="1" checked>
+                <label for="human">Human</label><br>
+                <input type="radio" id="player1AiEasy" name="player1Type" value="2">
+                <label for="aiEasy">AI (Easy)</label><br>
+                <input type="radio" id="player1AiMedium" name="player1Type" value="3">
+                <label for="aiMedium">AI (Medium)</label><br>
+                <input type="radio" id="player1AiHard" name="player1Type" value="4">
+                <label for="aiHard">AI (Hard)</label><br>
+                <input type="radio" id="player1AiUnbeatable" name="player1Type" value="5">
+                <label for="aiUnbeatable">AI (Unbeatable)</label><br><br><br>
+
+                <div class="optionsFormSectionTitle">Player 2</div><br>
+                <label for="player2Name">Name:</label>
+                <input type="text" id="player2Name" name="player2Name" value="Player 2" maxlength="100"><br><br>
+
+                <input type="radio" id="player2Human" name="player2Type" value="1" checked>
+                <label for="human">Human</label><br>
+                <input type="radio" id="player2AiEasy" name="player2Type" value="2">
+                <label for="aiEasy">AI (Easy)</label><br>
+                <input type="radio" id="player2AiMedium" name="player2Type" value="3">
+                <label for="aiMedium">AI (Medium)</label><br>
+                <input type="radio" id="player2AiHard" name="player2Type" value="4">
+                <label for="aiHard">AI (Hard)</label><br>
+                <input type="radio" id="player2AiUnbeatable" name="player2Type" value="5">
+                <label for="aiUnbeatable">AI (Unbeatable)</label><br><br><br>
+
+                <div class="optionsFormSectionTitle">Symbols</div><br>
+                <input type="radio" id="player1Human" name="symbolChoice" value="XO" checked>
+                <label for="symbolChoice1">Player 1 is 'X', and Player 2 is 'O'.</label><br>
+                <input type="radio" id="player1AiEasy" name="symbolChoice" value="OX">
+                <label for="symbolChoice2">Player 1 is 'O', and Player 2 is 'X'.</label><br><br><br>
+
+                <input class="formBtn" id="playBtn" type="submit" value="Play!">
+            </form>
+        </div>
+
+        <div class="gameDivClass hidden" id="gameDiv">
+            <div id="dispDiv"></div>
+
+            <div id="gameboard">
+                <div class="boardCell" id="a1"></div>
+                <div class="boardCell" id="a2"></div>
+                <div class="boardCell" id="a3"></div>
+                <div class="boardCell" id="b1"></div>
+                <div class="boardCell" id="b2"></div>
+                <div class="boardCell" id="b3"></div>
+                <div class="boardCell" id="c1"></div>
+                <div class="boardCell" id="c2"></div>
+                <div class="boardCell" id="c3"></div>
+            </div>
+
+            <div id="gameBtnDiv">
+                <button class="gameBtn" id="newGameBtn">New game</button>
+            </div>
+        </div>
+    </body>
+</html>
